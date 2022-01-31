@@ -28,21 +28,27 @@ public class Tarea1 {
 		}
 		time = time + Se;
 		sc.close();
-		int h, m, s, i;
-		h=m=s=0;
-		System.out.printf("%02d:%02d:%02d\n", h, m, s);
+		System.out.printf("%02d:%02d:%02d\n", Ho, Mi, Se);
+		int i;
 		for(i=0;i<time;i++) {
-			Thread.sleep(1000);
-			s++;
-			if(s==60) {
-				m++;
-				s = 0;
+			if(Se==0 && Mi!=0) {
+				Mi--;
+				Se=59;
+				Thread.sleep(1000);
+				System.out.printf("%02d:%02d:%02d\n", Ho, Mi, Se);
 			}
-			if(m==60) {
-				h++;
-				m=0;
+			if(Mi==0 && Ho!=0) {
+				Ho--;
+				Mi=59;
+				Se=59;
+				Thread.sleep(1000);
+				System.out.printf("%02d:%02d:%02d\n", Ho, Mi, Se);
 			}
-			System.out.printf("%02d:%02d:%02d\n", h, m, s);
+			if(Se!=0) {
+				Se--;
+				Thread.sleep(1000);
+				System.out.printf("%02d:%02d:%02d\n", Ho, Mi, Se);
+			}
 		}
 		System.out.println("Gracias por usar mi programa :)");
 	}
