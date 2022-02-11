@@ -3,16 +3,18 @@ package semana2;
 import java.util.Scanner;
 
 public class Funciones {
-	protected double[] qts() {
-		double[] q = new double[3];
+	protected Scanner scn() {
 		Scanner sc = new Scanner(System.in);
+		return sc;
+	}
+	protected double[] qts(Scanner sc) {
+		double[] q = new double[3];
 	    System.out.print("Ingrese los datos de la variable A: ");
 	    q[0] = sc.nextDouble();
 	    System.out.print("Ingrese los datos de la variable B: ");
 	    q[1] = sc.nextDouble();
 	    System.out.print("Ingrese los datos de la variable C: ");
 	    q[2] = sc.nextDouble();
-	    sc.close();
 	    return q;
 	}
 	protected double op1(double a, double b) {
