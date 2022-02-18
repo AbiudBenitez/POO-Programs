@@ -1,6 +1,6 @@
 package semana2;
 
-public class Main extends Funciones3 {
+public class Main extends Funciones {
 	public static void main(String[] args) {; 
 		double x, y, z, w, m;
 		Funciones3 fun = new Funciones3();
@@ -18,6 +18,6 @@ public class Main extends Funciones3 {
 		System.out.println("El resultado de M es: " + m);
 		System.out.println("El resultado de J es: " + fun.op6(z, q[0], q[1]));
 		System.out.println("El resultado de K es: " + fun.op7(w, m, q[0], q[1]));
-		System.out.println("El resultado de J es: " + fun.op8(r[0], q[0], r[1], x, w, y));
+		System.out.println("El resultado de P es: " + fun.op8(r[0], q[0], r[1], x, w, y));
 	}
 }
