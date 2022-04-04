@@ -46,7 +46,7 @@ public class Registro extends JFrame {
 		Txtnum = new JTextField(10);
 		Txtcon = new JTextField(10);
 		
-		Btnreg = new JButton("Registrar");
+		Btnreg = new JButton("Registrarz");
 		
 		frame.add(Lblusu);
 		frame.add(Txtusu);
